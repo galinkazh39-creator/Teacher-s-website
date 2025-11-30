@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Галина Жданова — репетитор английского</title>
+  <style>
+    :root{
+      --blue-1:#0b63d0; /* яркий синий */
+      --blue-2:#2f8df7; /* светлый акцент */
+      --bg:#f6fbff;   /* почти белый с голубым */
+      --card:#ffffff;
+      --soft:#e9f3ff;
+      --radius:18px;
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 8px 24px rgba(11,99,208,0.12);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);color:#05304a}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+
+    header{display:flex;align-items:center;gap:20px}
+    .logo{
+      width:86px;height:86px;border-radius:20px;background:linear-gradient(135deg,var(--blue-1),var(--blue-2));
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;box-shadow:var(--shadow)
+    }
+    .title h1{margin:0;font-size:24px;letter-spacing:0.2px}
+    .title p{margin:6px 0 0;color:#043055;opacity:0.9}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:18px}
+
+    .hero{
+      background:linear-gradient(180deg, rgba(47,141,247,0.06), rgba(11,99,208,0.015));
+      padding:22px;border-radius:20px;box-shadow:var(--shadow)
+    }
+    .hero h2{margin:0;font-size:22px;color:var(--blue-1)}
+    .hero .lead{margin:12px 0 18px;font-size:15px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+    .badge{background:var(--card);padding:8px 12px;border-radius:12px;border:1px solid rgba(11,99,208,0.06);font-weight:600}
+
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{flex:1 1 160px;background:var(--card);padding:14px;border-radius:14px;border:1px solid rgba(11,99,208,0.06)}
+    .feature h3{margin:0 0 6px;font-size:15px;color:var(--blue-1)}
+    .feature p{margin:0;font-size:13px;color:#064663}
+
+    .call{display:flex;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--blue-1),var(--blue-2));color:white;box-shadow:0 6px 18px rgba(47,141,247,0.18)}
+    .btn-ghost{background:transparent;border:2px solid var(--blue-2);color:var(--blue-1)}
+
+    /* right column */
+    .card{background:var(--card);padding:18px;border-radius:16px;box-shadow:var(--shadow)}
+    .card h4{margin:0 0 8px;color:var(--blue-1)}
+    .contact-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+    .contact-item{display:flex;gap:10px;align-items:center}
+    .pill{background:var(--soft);padding:8px 10px;border-radius:10px;font-weight:700;color:var(--blue-1)}
+
+    .photo{
+      height:120px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,var(--blue-2),#68b3ff);
+      color:white;font-weight:800;font-size:18px
+    }
+
+    footer{margin-top:22px;text-align:center;color:#09425b;opacity:0.9}
+
+    /* responsive */
+    @media (max-width:880px){
+      main{grid-template-columns:1fr}
+      .container{padding:18px}
+    }
+
+    /* small animations */
+    .logo, .card, .hero{transition:transform .36s ease,box-shadow .3s}
+    .logo:hover{transform:translateY(-6px)}
+    .btn:hover{transform:translateY(-4px)}
+
+    /* playful bright accents */
+    .sparkle{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,#a7d7ff,#ffffff);
+      border:1px solid rgba(11,99,208,0.08);font-weight:800;color:var(--blue-1)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">GZ</div>
+      <div class="title">
+        <h1>Галина Жданова</h1>
+        <p>Репетитор английского — дети 6–12 лет • 7 лет опыта</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Я делаю английский понятным и увлекательным</h2>
+        <p class="lead">Интерактивные уроки, игровые задания и индивидуальный подход. Венчур? Нет — английский для детей, который нравится и детям, и родителям.</p>
+
+        <div class="badges">
+          <div class="badge">Онлайн + офлайн</div>
+          <div class="badge">Индивидуально и в мини-группе</div>
+          <div class="badge">Игровые методики</div>
+          <div class="badge">Подготовка к контрольным</div>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <h3>Возраст</h3>
+            <p>6–12 лет — комфортная подача, визуальные подсказки и много говорения.</p>
+          </div>
+          <div class="feature">
+            <h3>Метод</h3>
+            <p>Коммуникативный подход + игры + дифференцированные задания.</p>
+          </div>
+          <div class="feature">
+            <h3>Результат</h3>
+            <p>Уверенное устное общение, автоматизация грамматики и словарный запас.</p>
+          </div>
+        </div>
+
+        <div class="call">
+          <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Записаться на пробный урок</button>
+          <button class="btn btn-ghost" onclick="document.getElementById('program').scrollIntoView({behavior:'smooth'})">Программа и цены</button>
+        </div>
+
+        <div style="margin-top:18px">
+          <span class="sparkle">Пробный урок — 30 минут</span>
+        </div>
+      </section>
+
+      <aside style="display:flex;flex-direction:column;gap:16px">
+        <div class="card">
+          <div class="photo">Фото (здесь можно загрузить вашу)</div>
+          <h4 style="margin-top:12px">Контакты</h4>
+          <div class="contact-list">
+            <div class="contact-item"><div class="pill">Тел</div><div>+7 (___) ___-__-__</div></div>
+            <div class="contact-item"><div class="pill">Email</div><div>galina@example.com</div></div>
+            <div class="contact-item"><div class="pill">WhatsApp</div><div>+7 (___) ___-__-__</div></div>
+          </div>
+        </div>
+
+        <div class="card" id="program">
+          <h4>Программа</h4>
+          <p style="margin:6px 0 10px">Короткие циклы 45–60 минут: разговорная практика, лексика, игра и домашнее задание. Материалы и поддержка для родителей.</p>
+          <ul style="margin:0;padding-left:18px">
+            <li>Beginner: знакомство с базовой лексикой</li>
+            <li>Pre-A1/A1: простые диалоги и чтение</li>
+            <li>A1–A2: грамматика в речи и расширение словаря</li>
+          </ul>
+          <p style="margin-top:10px;font-weight:700">Цена: от 1 000 ₽ / урок (зависит от формата)</p>
+        </div>
+
+      </aside>
+    </main>
+
+    <section style="margin-top:22px" class="card">
+      <h4>Отзывы</h4>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+        <div style="flex:1 1 260px;background:var(--soft);padding:12px;border-radius:12px">"Дочка стала увереннее говорить за 3 месяца" — Мама В.</div>
+        <div style="flex:1 1 260px;background:var(--soft);padding:12px;border-radius:12px">"Интересные задания и понятные объяснения" — Олег П.</div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px" class="card">
+      <h4>Записаться</h4>
+      <p>Оставьте заявку — я свяжусь в течение дня.</p>
+      <form onsubmit="event.preventDefault(); alert('Спасибо! Я с вами свяжусь. (Это демонстрационная форма.)')" style="display:grid;gap:10px;max-width:680px">
+        <input required placeholder="Ваше имя" style="padding:10px;border-radius:10px;border:1px solid #d9eefe" />
+        <input required placeholder="Телефон или email" style="padding:10px;border-radius:10px;border:1px solid #d9eefe" />
+        <select style="padding:10px;border-radius:10px;border:1px solid #d9eefe">
+          <option>6–7 лет</option>
+          <option>8–9 лет</option>
+          <option>10–12 лет</option>
+        </select>
+        <textarea placeholder="Коротко: цели и удобное время" style="padding:10px;border-radius:10px;border:1px solid #d9eefe"></textarea>
+        <div style="display:flex;gap:10px"><button class="btn btn-primary" type="submit">Отправить заявку</button><button class="btn btn-ghost" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">В начало</button></div>
+      </form>
+    </section>
+
+    <footer>
+      <small>© Галина Жданова — Репетитор английского • 7 лет опыта • Дети 6–12 лет</small>
+    </footer>
+  </div>
+</body>
+</html>
